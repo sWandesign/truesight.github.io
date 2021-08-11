@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>初曦選品 True Sight </title>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="logo">
+                <a href="./index.html"><img src="./img/logo.png" alt=""></a>
+            </div>
+            <nav class="top-right">
+                <ul>
+                    <li><a href="./store.html">商店</a> </li>
+                    <li><a href="">我的帳號</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-center">
+            <div class="sec4">
+                <div class="modal">
+                    <div class="modal_window">
+                        <img src="./img/bgoods1.jpg" alt="">
+                    </div>
+                    <img src="./img/sgoods2.jpg" alt="">
+                    <img src="./img/sgoods3.jpg" alt="">
+                    <img src="./img/sgoods4.jpg" alt="">
+                </div>
+                <div class="word_side">
+                    <h3>波佐見燒金典茶器組</h3>
+                    <h3 class="word1">NT$1280</h3>
+                    <p>指定分類，全民居家防疫！期間限定免運！（優惠限台灣本島，且不含大型家飾、特價品喔）</p>
+                    <div class="center">
+                        <h3>顏色</h3>
+                        <div class="btn_choose">
+                            <button class="btn_bla">金典黑</button>
+                            <button class="btn_whi">牛奶白</button>
+                        </div>
+                        <h3>數量</h3>
+                        <!-- codepen -->
+                        <div class="input-group">
+                            <div class="input-group-btn">
+                                <button id="down" class="btn btn-default" onclick=" down('0')"><span class="glyphicon glyphicon-minus">-</span></button>
+                            </div>
+                            <input type="text" id="myNumber" class="form-control input-number" value="1" />
+                            <div class="input-group-btn">
+                                <button id="up" class="btn btn-default" onclick="up('10')"><span class="glyphicon glyphicon-plus">+</span></button>
+                            </div>
+                        </div>
+                        <br>
+                        <a href="#" class="btn_buy">
+                            <p>放入購物車</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="word">
+                <h3 data-aos="fade-up">- 商品描述 -</h3>
+                <p data-aos="fade-up">
+                    可使用於洗碗機、微波爐，不可用烤箱 <br>
+                    材料：陶器 / 日本製<br>
+                    尺寸：寬 8.5 cm   長 8.5 cm   高 11.5 cm / 275 ml
+                </p>
+                <h3 data-aos="fade-up">- 了解更多 -</h3>
+                <p data-aos="fade-up">材質光滑好清洗，內加隔熱保溫不易燙手</p>
+                <h3 data-aos="fade-up">- 相關產品 -</h3>
+            </div>
+            <div class="related">
+               
+                <div class="goods7" data-aos="fade-up">
+                     <a href="./store.html">
+                        <img src="./img/goods7.jpg" alt="">
+                     </a>
+                      <h3>陶瓷茶器組</h3>
+                      <p>NT$420</p>
+                </div>
+                <div class="goods8" data-aos="fade-up">
+                    <a href="./store.html">
+                   <img src="./img/goods8.jpg" alt="">
+                    </a>
+                     <h3>BIALEM不鏽鋼沖茶組</h3>
+                     <p>NT$860</p>
+                </div>
+                <div class="goods9" data-aos="fade-up">
+                    <a href="./store.html">
+                   <img src="./img/goods9.jpg" alt="">
+                    </a>
+                     <h3>BIALEM不鏽鋼沖茶組</h3>
+                     <p>NT$1850</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <h3>- 聯絡資訊 -</h3>
+        <p>Tel 02-0800-1111 <br>
+            Email turesight@gmail.com <br>
+            新北市板橋區大觀路一段59號
+        </p>
+    </footer>
+    <a href="#" class="toTop">
+        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+      </a>
+    <script>
+        // codepen btn
+        function up(max) {
+    document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
+    if (document.getElementById("myNumber").value >= parseInt(max)) {
+        document.getElementById("myNumber").value = max;
+    }
+    }
+        function down(min) {
+    document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) - 1;
+    if (document.getElementById("myNumber").value <= parseInt(min)) {
+        document.getElementById("myNumber").value = min;
+    }
+    }
+    // codepen btn end
+
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            delay: 200,
+            duration: 500,
+            easing: 'ease',
+          });
+    </script>
+    <script src="./js/my.js"></script>
+</body>
+</html>
