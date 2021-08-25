@@ -423,6 +423,7 @@ footer p{
 }
 .col-4{
     margin: 1em auto;
+    
 }
 .col-2{
     margin-top: 40%;
@@ -714,6 +715,20 @@ footer p{
         margin-right: 0;
 
     }
+    .col-4{
+        margin: 0em auto;
+        width: 60vw;
+    }
+    .sec4 {
+        flex-wrap: wrap;
+        margin: 0 8% 0 8%;
+    }
+    .word_side {
+        padding: 20px 40px;
+    }
+    .word_side p,.word_side .word1,.center{
+        margin: 0px auto;
+    }
     .sec3{
         display: flex;
         flex-direction: column;
@@ -745,7 +760,8 @@ footer p{
         bottom: 40px;
     }
     .related {
-        margin: 0 100px 50px;
+        margin: 0 60px 30px;
+        flex-direction: row;
     }
 }
 /* ---------------iphone414---------------- */
@@ -783,12 +799,9 @@ footer p{
         display: flex;
         flex-direction: row;
     }
-    /* .title{
-        position: relative;
-        
-    } */
     .title h2{
         font-size: 20px;
+        top: 400px;
     }
     .title img{
         width: 100%;
@@ -828,6 +841,7 @@ footer p{
         font-size: 10px;
         font-weight: lighter;
         margin-bottom: 10px;
+       
     }
     .insight1 h1,.insight2 h1,.insight3 h1{
         font-size: 14px;
@@ -848,22 +862,73 @@ footer p{
     }
 
     /* store */
+    header{
+        background-color: transparent;
+    }
+    .list-group {
+        width: 80px;
+        right: 10px;
+    }
     .list-group-item{
         font-size: 10px;
-        padding: .1rem .6em;
+        padding: .2rem 1.6em;
     }
-
+    .row{
+        flex-direction: column;
+    }
+    .col-2 {
+        margin-top: 10%;
+    }
+    .col-4{
+        margin: 0em auto;
+         width: 60vw;
+    }
+    .col-6 {
+        width: 90%;
+    }
+    .col-10{
+        margin: 0 auto;
+    }
+    h3{
+        margin-top: 0em;
+        font-size: 0.8em;
+    }
     /* storemodal */
+
     .sec4 {
         display: flex;
         margin: 0;
         
     }
+    .modal {
+        width: 70vw;
+        padding: 0 60px;
+    }
     .modal img{
         width: 10%;
     }
     .modal_window img{
-        width: 65%;
+        width: 100%;
+    }
+    .word_side {
+        padding: 20px 80px;
+    }
+    .word_side h3 {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+    .center {
+        margin: 10px auto;
+    }
+    .related {
+        margin: 80px auto 0px;
+    }
+    .related {
+        flex-direction: row;
+    }
+    .word_side .word1 {
+        margin: 0;
+        font-size: 10px;
     }
     .main-center .sec4{
         width: 100vw;
@@ -872,6 +937,7 @@ footer p{
     }
     .logo .logo_hori {
         width: 100px;
+        margin: 10px
     }
     
 }
